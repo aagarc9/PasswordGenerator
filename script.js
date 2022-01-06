@@ -4,7 +4,10 @@ var generateBtn = document.querySelector("#generate");
 
 function generatePassword() {
 
-  var characters ="!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz123456789";
+  var sym ="!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~"
+  var Upper ="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  var Lower = "abcdefghijklmnopqrstuvwxyz";
+  var Num =123456789;
     
     var save_user_input = prompt("How many characters would you like your password? ( Between 8 and 128)")
    
@@ -31,7 +34,7 @@ function generatePassword() {
     var password = ""
     
     for (var i=0; i <= save_user_input; i++) {
-        password += characters.chartAt(Math.floor(Math.random() * characters.length));
+        password += characters.chartAt(Math.floor(Math.random() * sym.length));
         
     }
 
