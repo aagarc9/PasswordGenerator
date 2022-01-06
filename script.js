@@ -9,15 +9,25 @@ var num = '0123456789';
 function generatePassword() {
     
     // 1. Prompt the user for the password criteria
-    prompt("How many charaters would you like your password")
+    var save_user_input = prompt("How many characters would you like your password? ( Between 8 and 128)")
+
+    if (save_user_input < 8) {
+      alert("This is less than 8")
+    } else if (save_user_input >= 8 && save_user_input <= 128) {
+      alert("Would you like to include symbols?")
+    } else {
+      alert("This is more than 128")
+    }
+
+}
+      
+
+
     //      a. Password lenght 8 < 128
     //      b. lowercase, Uppercase, numbers, special characters
     // 2. Validate the input
     // 3. Display password to the page
 
-}
-
-generatePassword()
 
 // Write password to the #password input
 function writePassword() {
