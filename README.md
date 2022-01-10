@@ -23,5 +23,5 @@ In this week's homework, the user will be able to generate a password based on t
 
 https://aagarc9.github.io/PasswordGenerator/
 
-
+<img width="941" alt="Capture" src="https://user-images.githubusercontent.com/92004832/148791110-b54433c6-8460-4aef-8cea-fe775530e993.PNG">
 
